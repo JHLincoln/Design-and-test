@@ -29,3 +29,9 @@ def test_add_to_first_and_become_higher():
     high_value.add(1, "first")
     result = high_value.get_highest()
     assert result == "First value is higher"
+
+def test_add_to_second_and_become_higher():
+    high_value = HighValue(4, 4)
+    high_value.add(1, "second")
+    result = high_value.get_highest()
+    assert result == "Second value is higher"
